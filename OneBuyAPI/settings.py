@@ -121,3 +121,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# 项目地址
+# git@github.com:changkuanshenhj/OneBuyAPI.git
+# https://github.com/changkuanshenhj/OneBuyAPI.git
