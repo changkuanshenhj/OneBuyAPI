@@ -1,3 +1,3 @@
-#!bin/sh
+#!usr/bin/sh
 cd /usr/src/OneBuyAPI/
-git pullusr/
+git pull
