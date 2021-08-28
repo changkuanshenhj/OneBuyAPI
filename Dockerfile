@@ -1,6 +1,5 @@
 FROM duruo850/ubuntu18.04-python3.6:latest
 MAINTAINER cxk 939083230@qq.com
-SHELL ['/bin/bash']
 WORKDIR /usr/src
 RUN apt update
 RUN apt install cron
