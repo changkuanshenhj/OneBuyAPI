@@ -1,0 +1,224 @@
+{
+  "Code": "0",
+  "Message": "操作成功",
+  "IsSuccessful": true,
+  "Data": {
+    "CategoryList": [
+      {
+        "CategoryId": "e1680a10-9cd6-4ba1-98f9-50e02eb990cb",
+        "CategoryCode": "05_channelhome",
+        "CategoryName": "精选肉类",
+        "Childs": [
+          {
+            "CategoryId": "e1680a10-9cd6-4ba1-98f9-50e02eb990cb",
+            "CategoryCode": "05_channelhome",
+            "CategoryName": "全部",
+            "Childs": null,
+            "Grade": 1,
+            "HighId": "e1680a10-9cd6-4ba1-98f9-50e02eb990cb",
+            "PictureUrl": "https://img12.yiguoimg.com/e/items/2017/170615/9288709152481999_220.jpg",
+            "PriorId": "00000000-0000-0000-0000-000000000000"
+          },
+          {
+            "CategoryId": "6a31430a-31ce-49b4-8cd1-91602abfe6a9",
+            "CategoryCode": "0510_niupai",
+            "CategoryName": "牛排",
+            "Childs": null,
+            "Grade": 2,
+            "HighId": "e1680a10-9cd6-4ba1-98f9-50e02eb990cb",
+            "PictureUrl": "https://img10.yiguoimg.com/d/items/2018/180803/9570202619127043_220.jpg",
+            "PriorId": "e1680a10-9cd6-4ba1-98f9-50e02eb990cb"
+          },
+          {
+            "CategoryId": "f89ac515-f6f9-4110-a716-8fd928135ad8",
+            "CategoryCode": "0501_jinkouniurou",
+            "CategoryName": "进口牛肉",
+            "Childs": null,
+            "Grade": 2,
+            "HighId": "e1680a10-9cd6-4ba1-98f9-50e02eb990cb",
+            "PictureUrl": "https://img09.yiguoimg.com/e/items/2017/170615/9288709152318159_220.jpg",
+            "PriorId": "e1680a10-9cd6-4ba1-98f9-50e02eb990cb"
+          }
+        ],
+        "Grade": 1,
+        "HighId": "e1680a10-9cd6-4ba1-98f9-50e02eb990cb",
+        "PictureUrl": "https://img12.yiguoimg.com/e/items/2017/170615/9288709152481999_220.jpg",
+        "PriorId": "00000000-0000-0000-0000-000000000000"
+      },
+      {
+        "CategoryId": "34c19d99-19a6-4e86-9144-18a8670cc577",
+        "CategoryCode": "04_channelhome",
+        "CategoryName": "海鲜水产",
+        "Childs": [
+          {
+            "CategoryId": "34c19d99-19a6-4e86-9144-18a8670cc577",
+            "CategoryCode": "04_channelhome",
+            "CategoryName": "全部",
+            "Childs": null,
+            "Grade": 1,
+            "HighId": "34c19d99-19a6-4e86-9144-18a8670cc577",
+            "PictureUrl": "https://img13.yiguoimg.com/e/items/2017/170619/9288709276607187_220.jpg",
+            "PriorId": "00000000-0000-0000-0000-000000000000"
+          },
+          {
+            "CategoryId": "69a9962b-0a8c-4a58-b6e8-f9a15d73da80",
+            "CategoryCode": "0411_xiequan",
+            "CategoryName": "大闸蟹券",
+            "Childs": null,
+            "Grade": 2,
+            "HighId": "34c19d99-19a6-4e86-9144-18a8670cc577",
+            "PictureUrl": "https://img12.yiguoimg.com/d/items/2019/190813/9570213791409933_144.jpg",
+            "PriorId": "34c19d99-19a6-4e86-9144-18a8670cc577"
+          }
+        ],
+        "Grade": 1,
+        "HighId": "34c19d99-19a6-4e86-9144-18a8670cc577",
+        "PictureUrl": "https://img13.yiguoimg.com/e/items/2017/170619/9288709276607187_220.jpg",
+        "PriorId": "00000000-0000-0000-0000-000000000000"
+      },
+      {
+        "CategoryId": "bbbf4838-2574-4e71-9f96-328e664e6e1e",
+        "CategoryCode": "07_channelhome",
+        "CategoryName": "粮油杂货",
+        "Childs": [
+          {
+            "CategoryId": "bbbf4838-2574-4e71-9f96-328e664e6e1e",
+            "CategoryCode": "07_channelhome",
+            "CategoryName": "全部",
+            "Childs": null,
+            "Grade": 1,
+            "HighId": "bbbf4838-2574-4e71-9f96-328e664e6e1e",
+            "PictureUrl": "https://img10.yiguoimg.com/e/items/2017/170615/9288709120729807_220.jpg",
+            "PriorId": "00000000-0000-0000-0000-000000000000"
+          },
+          {
+            "CategoryId": "1339af62-7b56-4067-861e-f89b9e265f03",
+            "CategoryCode": "0706_ganhuo",
+            "CategoryName": "杂粮干货",
+            "Childs": null,
+            "Grade": 2,
+            "HighId": "bbbf4838-2574-4e71-9f96-328e664e6e1e",
+            "PictureUrl": "https://img14.yiguoimg.com/e/items/2017/170615/9288709120664271_220.jpg",
+            "PriorId": "bbbf4838-2574-4e71-9f96-328e664e6e1e"
+          },
+          {
+            "CategoryId": "33a7a858-ef0c-48fd-b8ec-fc2a55337461",
+            "CategoryCode": "0707_guoganlingshi",
+            "CategoryName": "坚果零食",
+            "Childs": null,
+            "Grade": 2,
+            "HighId": "bbbf4838-2574-4e71-9f96-328e664e6e1e",
+            "PictureUrl": "https://img13.yiguoimg.com/e/items/2017/170615/9288709120631503_220.jpg",
+            "PriorId": "bbbf4838-2574-4e71-9f96-328e664e6e1e"
+          }
+        ],
+        "Grade": 1,
+        "HighId": "bbbf4838-2574-4e71-9f96-328e664e6e1e",
+        "PictureUrl": "https://img10.yiguoimg.com/e/items/2017/170615/9288709120729807_220.jpg",
+        "PriorId": "00000000-0000-0000-0000-000000000000"
+      },
+      {
+        "CategoryId": "7044ff88-2139-4874-ac5b-b8e2275d64b5",
+        "CategoryCode": "09_channelhome",
+        "CategoryName": "食品饮料",
+        "Childs": [
+          {
+            "CategoryId": "7044ff88-2139-4874-ac5b-b8e2275d64b5",
+            "CategoryCode": "09_channelhome",
+            "CategoryName": "全部",
+            "Childs": null,
+            "Grade": 1,
+            "HighId": "7044ff88-2139-4874-ac5b-b8e2275d64b5",
+            "PictureUrl": "https://img10.yiguoimg.com/e/items/2017/170615/9288709121811151_220.jpg",
+            "PriorId": "00000000-0000-0000-0000-000000000000"
+          },
+          {
+            "CategoryId": "722a78cd-0313-44fa-82a7-79bb85ae726a",
+            "CategoryCode": "0901_shui",
+            "CategoryName": "水",
+            "Childs": null,
+            "Grade": 2,
+            "HighId": "7044ff88-2139-4874-ac5b-b8e2275d64b5",
+            "PictureUrl": "https://img09.yiguoimg.com/e/items/2017/170615/9288709121778383_220.jpg",
+            "PriorId": "7044ff88-2139-4874-ac5b-b8e2275d64b5"
+          },
+          {
+            "CategoryId": "f9004467-d514-47a3-a50c-90e1aee87ab6",
+            "CategoryCode": "0903_chongtiaoyinpin",
+            "CategoryName": "冲调茶饮",
+            "Childs": null,
+            "Grade": 2,
+            "HighId": "7044ff88-2139-4874-ac5b-b8e2275d64b5",
+            "PictureUrl": "https://img14.yiguoimg.com/e/items/2017/170615/9288709121712847_220.jpg",
+            "PriorId": "7044ff88-2139-4874-ac5b-b8e2275d64b5"
+          },
+          {
+            "CategoryId": "880514a5-a7f2-4c0f-bdcc-01c0ef818326",
+            "CategoryCode": "0904_jiujiuju",
+            "CategoryName": "葡萄酒/酒具",
+            "Childs": null,
+            "Grade": 2,
+            "HighId": "7044ff88-2139-4874-ac5b-b8e2275d64b5",
+            "PictureUrl": "https://img11.yiguoimg.com/e/items/2017/170615/9288709121680079_220.jpg",
+            "PriorId": "7044ff88-2139-4874-ac5b-b8e2275d64b5"
+          },
+          {
+            "CategoryId": "eee11a0d-5368-467b-a1de-3d110bff137d",
+            "CategoryCode": "xiushi",
+            "CategoryName": "休闲食品",
+            "Childs": null,
+            "Grade": 2,
+            "HighId": "7044ff88-2139-4874-ac5b-b8e2275d64b5",
+            "PictureUrl": "https://img11.yiguoimg.com/d/items/2019/190617/9288738284840657_220.jpg",
+            "PriorId": "7044ff88-2139-4874-ac5b-b8e2275d64b5"
+          },
+          {
+            "CategoryId": "4f968a14-415f-4400-be80-e05585f1dfb5",
+            "CategoryCode": "0905_beer",
+            "CategoryName": "啤酒",
+            "Childs": null,
+            "Grade": 2,
+            "HighId": "7044ff88-2139-4874-ac5b-b8e2275d64b5",
+            "PictureUrl": "https://img14.yiguoimg.com/d/items/2017/171122/9288715459765110_220.jpg",
+            "PriorId": "7044ff88-2139-4874-ac5b-b8e2275d64b5"
+          }
+        ],
+        "Grade": 1,
+        "HighId": "7044ff88-2139-4874-ac5b-b8e2275d64b5",
+        "PictureUrl": "https://img10.yiguoimg.com/e/items/2017/170615/9288709121811151_220.jpg",
+        "PriorId": "00000000-0000-0000-0000-000000000000"
+      },
+      {
+        "CategoryId": "34bf3f9a-186e-4b2a-946d-64055f06ebae",
+        "CategoryCode": "11_channelhome",
+        "CategoryName": "礼品礼券",
+        "Childs": [
+          {
+            "CategoryId": "34bf3f9a-186e-4b2a-946d-64055f06ebae",
+            "CategoryCode": "11_channelhome",
+            "CategoryName": "全部",
+            "Childs": null,
+            "Grade": 1,
+            "HighId": "34bf3f9a-186e-4b2a-946d-64055f06ebae",
+            "PictureUrl": "https://img14.yiguoimg.com/e/items/2017/170615/9288709151761103_220.jpg",
+            "PriorId": "00000000-0000-0000-0000-000000000000"
+          },
+          {
+            "CategoryId": "719980a1-1ba9-42dd-b5ff-4f6663737c78",
+            "CategoryCode": "1101_lipinlihe",
+            "CategoryName": "礼品礼盒",
+            "Childs": null,
+            "Grade": 2,
+            "HighId": "34bf3f9a-186e-4b2a-946d-64055f06ebae",
+            "PictureUrl": "https://img12.yiguoimg.com/e/items/2017/170615/9288709121516239_220.jpg",
+            "PriorId": "34bf3f9a-186e-4b2a-946d-64055f06ebae"
+          }
+        ],
+        "Grade": 1,
+        "HighId": "34bf3f9a-186e-4b2a-946d-64055f06ebae",
+        "PictureUrl": "https://img14.yiguoimg.com/e/items/2017/170615/9288709151761103_220.jpg",
+        "PriorId": "00000000-0000-0000-0000-000000000000"
+      }
+    ]
+  }
+}

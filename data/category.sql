@@ -1,0 +1,17 @@
+insert into t_category(id, code, name, grade, picture_url, parent_id) VALUES 
+('e1680a10-9cd6-4ba1-98f9-50e02eb990cb', '05_channelhome', '精选肉类', 1, 'https://img12.yiguoimg.com/e/items/2017/170615/9288709152481999_220.jpg', '00000000-0000-0000-0000-000000000000'),
+('6a31430a-31ce-49b4-8cd1-91602abfe6a9', '0510_niupai', '牛排', 2, 'https://img10.yiguoimg.com/d/items/2018/180803/9570202619127043_220.jpg', 'e1680a10-9cd6-4ba1-98f9-50e02eb990cb'),
+('f89ac515-f6f9-4110-a716-8fd928135ad8', '0501_jinkouniurou', '进口牛肉', 2, 'https://img09.yiguoimg.com/e/items/2017/170615/9288709152318159_220.jpg', 'e1680a10-9cd6-4ba1-98f9-50e02eb990cb'),
+('34c19d99-19a6-4e86-9144-18a8670cc577', '04_channelhome', '海鲜水产', 1, 'https://img13.yiguoimg.com/e/items/2017/170619/9288709276607187_220.jpg', '00000000-0000-0000-0000-000000000000'),
+('69a9962b-0a8c-4a58-b6e8-f9a15d73da80', '0411_xiequan', '大闸蟹券', 2, 'https://img12.yiguoimg.com/d/items/2019/190813/9570213791409933_144.jpg', '34c19d99-19a6-4e86-9144-18a8670cc577'),
+('bbbf4838-2574-4e71-9f96-328e664e6e1e', '07_channelhome', '粮油杂货', 1, 'https://img10.yiguoimg.com/e/items/2017/170615/9288709120729807_220.jpg', '00000000-0000-0000-0000-000000000000'),
+('1339af62-7b56-4067-861e-f89b9e265f03', '0706_ganhuo', '杂粮干货', 2, 'https://img14.yiguoimg.com/e/items/2017/170615/9288709120664271_220.jpg', 'bbbf4838-2574-4e71-9f96-328e664e6e1e'),
+('33a7a858-ef0c-48fd-b8ec-fc2a55337461', '0707_guoganlingshi', '坚果零食', 2, 'https://img13.yiguoimg.com/e/items/2017/170615/9288709120631503_220.jpg', 'bbbf4838-2574-4e71-9f96-328e664e6e1e'),
+('7044ff88-2139-4874-ac5b-b8e2275d64b5', '09_channelhome', '食品饮料', 1, 'https://img10.yiguoimg.com/e/items/2017/170615/9288709121811151_220.jpg', '00000000-0000-0000-0000-000000000000'),
+('722a78cd-0313-44fa-82a7-79bb85ae726a', '0901_shui', '水', 2, 'https://img09.yiguoimg.com/e/items/2017/170615/9288709121778383_220.jpg', '7044ff88-2139-4874-ac5b-b8e2275d64b5'),
+('f9004467-d514-47a3-a50c-90e1aee87ab6', '0903_chongtiaoyinpin', '冲调茶饮', 2, 'https://img14.yiguoimg.com/e/items/2017/170615/9288709121712847_220.jpg', '7044ff88-2139-4874-ac5b-b8e2275d64b5'),
+('880514a5-a7f2-4c0f-bdcc-01c0ef818326', '0904_jiujiuju', '葡萄酒/酒具', 2, 'https://img11.yiguoimg.com/e/items/2017/170615/9288709121680079_220.jpg', '7044ff88-2139-4874-ac5b-b8e2275d64b5'),
+('eee11a0d-5368-467b-a1de-3d110bff137d', 'xiushi', '休闲食品', 2, 'https://img11.yiguoimg.com/d/items/2019/190617/9288738284840657_220.jpg', '7044ff88-2139-4874-ac5b-b8e2275d64b5'),
+('4f968a14-415f-4400-be80-e05585f1dfb5', '0905_beer', '啤酒', 2, 'https://img14.yiguoimg.com/d/items/2017/171122/9288715459765110_220.jpg', '7044ff88-2139-4874-ac5b-b8e2275d64b5'),
+('34bf3f9a-186e-4b2a-946d-64055f06ebae', '11_channelhome', '礼品礼券', 1, 'https://img14.yiguoimg.com/e/items/2017/170615/9288709151761103_220.jpg', '00000000-0000-0000-0000-000000000000'),
+('719980a1-1ba9-42dd-b5ff-4f6663737c78', '1101_lipinlihe', '礼品礼盒', 2, 'https://img12.yiguoimg.com/e/items/2017/170615/9288709121516239_220.jpg', '34bf3f9a-186e-4b2a-946d-64055f06ebae');
