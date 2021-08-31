@@ -16,8 +16,9 @@ class YGBaseModel(models.Model):
 
 @receiver(pre_save)
 def new_uuid_value(sender, **kwargs):
+    print('asdjasdas')
     if issubclass(sender, YGBaseModel):
         instance = kwargs.get('instance')
-        if instance.id is None:
+        if not instance.id:
             instance.id = uuid.uuid4().hex
             # instance.id = str(uuid.uuid4()) 带横杠的uuid码
