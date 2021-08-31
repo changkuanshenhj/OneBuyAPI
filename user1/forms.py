@@ -4,7 +4,7 @@ from .models import AppUser
 from django.core.exceptions import ValidationError
 
 
-class AppUserForm(forms.ModelForm):
+class UserForm(forms.ModelForm):
     name = forms.CharField(min_length=8,
                            max_length=20,
                            required=True,
@@ -13,16 +13,6 @@ class AppUserForm(forms.ModelForm):
                                'max_length': '账户不能超出20个字符',
                                'mix_length': '账户不能少于8个字符'
                            })
-
-    # 自定义验证规则：必须包含大写、小写和数字等字符
-    auth_key = forms.CharField(widget=forms.PasswordInput,
-                               label='口令',
-                               min_length=6,
-                               error_messages={
-                                   'required': '口令不能为空',
-                                   'min_length': '口令不少于6位'
-                               })
-
     phone = forms.CharField(max_length=11,
                             min_length=11,
                             required=True,
@@ -31,13 +21,13 @@ class AppUserForm(forms.ModelForm):
     email = forms.CharField(required=True,
                             label='邮箱')
 
-    class Meta:
-        models = AppUser
-        fields = ('name', 'auth_key', 'phone', 'email')
-
-    def is_valid(self):
-        print('--is_vaild()--')
-        super().is_valid()
+    auth_key = forms.CharField(widget=forms.PasswordInput,
+                               label='口令',
+                               min_length=6,
+                               error_messages={
+                                   'required': '口令不能为空',
+                                   'min_length': '口令不少于6位'
+                               })
 
     def clean_auth_key(self):
         # 以上验证都通过了
@@ -52,4 +42,13 @@ class AppUserForm(forms.ModelForm):
             return auth_key
 
         raise ValidationError('口令必须包含大写、小写和数字等字符')
+
+    # 出大问题出。（查看其原理）
+    # def is_valid(self):
+    #     print('--is_vaild()--')
+    #     super().is_valid()
+
+    class Meta:
+        model = AppUser
+        fields = ['name', 'auth_key', 'phone', 'email']
 

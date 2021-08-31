@@ -16,7 +16,6 @@ class YGBaseModel(models.Model):
 
 @receiver(pre_save)
 def new_uuid_value(sender, **kwargs):
-    print('asdjasdas')
     if issubclass(sender, YGBaseModel):
         instance = kwargs.get('instance')
         if not instance.id:

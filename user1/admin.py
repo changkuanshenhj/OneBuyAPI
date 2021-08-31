@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import AppUser
-from .forms import AppUserForm
+# from .models import AppUser
+from .forms import AppUser, UserForm
 
 # Register your models here.
 
@@ -8,7 +8,7 @@ from .forms import AppUserForm
 class AppUserAdmin(admin.ModelAdmin):
     list_display = ('name', 'phone', 'email', 'create_time', 'status')
     # fields = ('name', 'phone', 'auth_key', 'email')
-    form = AppUserForm
+    form = UserForm
 
 
 admin.site.register(AppUser, AppUserAdmin)
