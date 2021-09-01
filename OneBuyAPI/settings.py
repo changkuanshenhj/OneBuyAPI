@@ -124,6 +124,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+MEDIA_URL = '/m/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # 项目地址
 # git@github.com:changkuanshenhj/OneBuyAPI.git
 # https://github.com/changkuanshenhj/OneBuyAPI.git

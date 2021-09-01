@@ -32,6 +32,11 @@ class AppUser(YGBaseModel):
                                           (1, '正常'),
                                           (2, '注销')))
 
+    img1 = models.CharField(max_length=100,
+                            verbose_name='头像',
+                            null=True,
+                            blank=True)
+
     objects = AppUserManager()
 
     def __str__(self):

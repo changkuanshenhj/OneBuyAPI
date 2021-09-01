@@ -2,9 +2,12 @@ import re
 from django import forms
 from .models import AppUser
 from django.core.exceptions import ValidationError
+from .widgets import SendEmailButton, IDWidget, ImgWidget
 
 
 class UserForm(forms.ModelForm):
+    id = forms.CharField(widget=IDWidget, label='主键', disabled=True)
+
     name = forms.CharField(min_length=8,
                            max_length=20,
                            required=True,
@@ -18,8 +21,10 @@ class UserForm(forms.ModelForm):
                             required=True,
                             label='手机号')
 
+    # 通过widget属性指定自定义widget部件
     email = forms.CharField(required=True,
-                            label='邮箱')
+                            label='邮箱',
+                            widget=SendEmailButton)
 
     auth_key = forms.CharField(widget=forms.PasswordInput,
                                label='口令',
@@ -28,6 +33,8 @@ class UserForm(forms.ModelForm):
                                    'required': '口令不能为空',
                                    'min_length': '口令不少于6位'
                                })
+    img1 = forms.CharField(max_length=100,
+                           widget=ImgWidget)
 
     def clean_auth_key(self):
         # 以上验证都通过了
@@ -43,12 +50,15 @@ class UserForm(forms.ModelForm):
 
         raise ValidationError('口令必须包含大写、小写和数字等字符')
 
-    # 出大问题出。（查看其原理）
+    # 出大问题出处。（查看其原理）
     # def is_valid(self):
     #     print('--is_vaild()--')
-    #     super().is_valid()
+    #     return super().is_valid()
 
     class Meta:
         model = AppUser
-        fields = ['name', 'auth_key', 'phone', 'email']
+        fields = ['id', 'img1', 'name', 'auth_key', 'phone', 'email']
+        error_messages = {
+
+        }
 
