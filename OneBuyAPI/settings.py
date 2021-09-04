@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'commondity',
     'user1',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -52,6 +53,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 ]
 
 ROOT_URLCONF = 'OneBuyAPI.urls'
@@ -129,3 +132,19 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # 项目地址
 # git@github.com:changkuanshenhj/OneBuyAPI.git
 # https://github.com/changkuanshenhj/OneBuyAPI.git
+
+
+# 配置网易邮箱
+# 授权码：DGPPDYNRXOHYQSGB
+# EMAIL_HOST的内容不能有空格掺杂在里面
+EMAIL_HOST = 'smtp.163.com'
+EMAIL_PORT = 25
+EMAIL_HOST_USER = 'cxk_370456@163.com'
+EMAIL_HOST_PASSWORD = 'DXLSPZLMUADFUOQM'
+
+# Cors设置-白名单
+# CORS_ORIGIN_WHITELIST = (
+#     'http://localhost:9000',
+# )
+CORS_ALLOW_CREDENTIALS = True  # 启用Cookie
+CORS_ORIGIN_ALLOW_ALL = True

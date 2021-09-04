@@ -2,7 +2,7 @@ import re
 from django import forms
 from .models import AppUser
 from django.core.exceptions import ValidationError
-from .widgets import SendEmailButton, IDWidget, ImgWidget
+from .widgets import SendEmailButton, IDWidget, ImgWidget, PwdWidget
 
 
 class UserForm(forms.ModelForm):
@@ -26,15 +26,18 @@ class UserForm(forms.ModelForm):
                             label='邮箱',
                             widget=SendEmailButton)
 
-    auth_key = forms.CharField(widget=forms.PasswordInput,
+    auth_key = forms.CharField(widget=PwdWidget,
+                               # 一样的效果widget=forms.PasswordInput(render_value=True),
                                label='口令',
                                min_length=6,
                                error_messages={
                                    'required': '口令不能为空',
                                    'min_length': '口令不少于6位'
                                })
+
     img1 = forms.CharField(max_length=100,
-                           widget=ImgWidget)
+                           widget=ImgWidget,
+                           required=False)
 
     def clean_auth_key(self):
         # 以上验证都通过了

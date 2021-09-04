@@ -1,6 +1,6 @@
 import uuid
 
-from django.forms.widgets import TextInput
+from django.forms.widgets import TextInput, PasswordInput
 
 
 class SendEmailButton(TextInput):
@@ -23,10 +23,16 @@ class IDWidget(TextInput):
     def get_context(self, name, value, attrs):
         # 新增用户时:
         if not value:
-            value = uuid.uuid4().hex()
+            value = uuid.uuid4().hex
 
         return super().get_context(name, value, attrs)
 
 
 class ImgWidget(TextInput):
     template_name = 'img1.html'
+
+
+class PwdWidget(PasswordInput):
+    def __init__(self, attrs=None, render_value=True):
+        super().__init__(attrs)
+        self.render_value = render_value
